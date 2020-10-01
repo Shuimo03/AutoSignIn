@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "AutoSignin",
+  "description": "校园网自动登录",
+  "version": "2.0",
+
+  "content_scripts":[
+    {
+      "matches": [ "http://192.168.167.46/*"],
+      "js": ["login.js"],
+      "run_at":"document_end",
+      "all_frames":true
+
+    }
+  ],
+
+  "permissions": [
+    "http://192.168.167.46/*"
+
+  ]
+}
