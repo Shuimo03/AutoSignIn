@@ -1,6 +1,9 @@
 # AutoSignIn
 ## 文档说明
-这个插件主要是因为学校网络每次都要输入密码然后登录，这个过程太麻烦了，所以为了简化这个过程，就有了这个插件。
+这个插件主要是因为学校网络每次都要输入密码然后登录，这个过程太麻烦了，所以为了简化这个过程，就有了这个插件，
+主要是基于autoLogin这个项目进行了二次开发。
+autoLogin https://github.com/KKKyrie/autoLogin/tree/master/src
+
 
 ## manifest.json说明
 + manifest_version:文件内容格式的版本，目前版本为2
@@ -14,3 +17,6 @@
 + run_at:注入的位置
 + document_end:文档的末尾
 + all_frames:是否全frame注入，比如页面使用了iframe或者frame。
+
+## 使用说明
+在chrome中打开开发者模式，然后选这个整个目录，就可以使用了。
